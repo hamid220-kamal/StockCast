@@ -1,0 +1,15 @@
+# ---- Core data / numerics ----
+numpy>=1.24
+pandas>=1.5
+scipy>=1.10
+
+# ---- Machine learning ----
+scikit-learn>=1.2
+torch>=2.0
+
+# ---- Visualisation ----
+matplotlib>=3.6
+seaborn>=0.12
+
+# ---- Optional: fetch real market data (uncomment to use) ----
+# yfinance>=0.2.40

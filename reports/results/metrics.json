@@ -1,0 +1,93 @@
+{
+  "ticker": "AAPL",
+  "eda": {
+    "n_rows": 1506,
+    "date_range": [
+      "2020-11-04",
+      "2026-11-03"
+    ],
+    "close_min": 110.52668762207033,
+    "close_max": 348.9100036621094,
+    "close_start": 111.40238189697266,
+    "close_end": 331.8999938964844,
+    "total_return_%": 197.92899240110745,
+    "mean_daily_return_%": 0.08757884466570483,
+    "annualised_volatility_%": 27.568941386052938,
+    "n_features": 10,
+    "features": [
+      "Open",
+      "High",
+      "Low",
+      "Close",
+      "Volume",
+      "Return_1d",
+      "SMA_5",
+      "SMA_20",
+      "RSI_14",
+      "Volatility_10"
+    ]
+  },
+  "split": {
+    "train": 1156,
+    "test": 290,
+    "lookback": 60
+  },
+  "metrics": {
+    "Ridge": {
+      "MAE": 3.2347055006704233,
+      "MSE": 20.234025245746643,
+      "RMSE": 4.498224677108364,
+      "MAPE_%": 1.127832280302491,
+      "R2": 0.9792125523222122
+    },
+    "RandomForest": {
+      "MAE": 4.650705275103408,
+      "MSE": 33.8125509122312,
+      "RMSE": 5.814856052580425,
+      "MAPE_%": 1.6123522757863211,
+      "R2": 0.9652626393214423
+    },
+    "GradientBoosting": {
+      "MAE": 5.912889563671789,
+      "MSE": 49.75306172595803,
+      "RMSE": 7.053585026492417,
+      "MAPE_%": 2.0454577798621627,
+      "R2": 0.9488861383300139
+    },
+    "LSTM": {
+      "MAE": 3.191029211894437,
+      "MSE": 19.775910334931254,
+      "RMSE": 4.447011393613834,
+      "MAPE_%": 1.1142010795599817,
+      "R2": 0.9796831971703495
+    },
+    "Naive": {
+      "MAE": 3.1633558076003485,
+      "MSE": 19.513872390104726,
+      "RMSE": 4.4174508927779526,
+      "MAPE_%": 1.1049528885402977,
+      "R2": 0.9799524021358231
+    }
+  },
+  "direction": {
+    "Ridge": {
+      "direction_accuracy_%": 46.89655172413793,
+      "naive_baseline_accuracy_%": 53.79310344827586
+    },
+    "RandomForest": {
+      "direction_accuracy_%": 47.93103448275862,
+      "naive_baseline_accuracy_%": 53.79310344827586
+    },
+    "GradientBoosting": {
+      "direction_accuracy_%": 47.58620689655172,
+      "naive_baseline_accuracy_%": 53.79310344827586
+    },
+    "LSTM": {
+      "direction_accuracy_%": 46.206896551724135,
+      "naive_baseline_accuracy_%": 53.79310344827586
+    }
+  },
+  "lstm_epochs_run": 35,
+  "best_model": "LSTM",
+  "best_direction_model": "RandomForest"
+}

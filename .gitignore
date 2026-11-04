@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+
+# Model artefacts / caches (regenerate with `python main.py train`)
+reports/results/*.pt
+reports/results/*.npz
+
+# OS
+.DS_Store
+Thumbs.db
